@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:nerolab_cli/src/command_runner.dart';
+import 'package:flutter_nerolab_cli/src/command_runner.dart';
 
 void main(List<String> args) async {
   await _flushThenExit(await NerolabCommandRunner().run(args));

@@ -1,6 +1,6 @@
 # Nerolab CLI
 
-<a href="https://nerolab.dev/"><img src='assets/logo_nerolab_text_black.png' height = 100></a>
+<a href="https://nerolab.dev/"><img src='https://github.com/Nerolab/nerolab_cli/blob/master/assets/logo_nerolab_text_black.png?raw=true' height = 100></a>
 
 
 Nerolab Command Line Interface for Dart.

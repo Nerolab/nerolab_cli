@@ -1,7 +1,7 @@
 import 'package:args/args.dart';
 import 'package:args/command_runner.dart';
 import 'package:mason/mason.dart';
-import 'package:nerolab_cli/src/version.dart';
+import 'package:flutter_nerolab_cli/src/version.dart';
 
 import 'commands/commands.dart';
 

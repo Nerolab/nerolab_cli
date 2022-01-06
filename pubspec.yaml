@@ -1,8 +1,8 @@
-name: nerolab_cli
+name: flutter_nerolab_cli
 description: Command Line Interface to generate flutter starter project.
 homepage: https://nerolab.dev/
 repository: https://github.com/Nerolab/nerolab_cli
-version: 0.1.0
+version: 0.1.1
 
 environment:
   sdk: ">=2.15.1 <3.0.0"
