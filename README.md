@@ -9,7 +9,7 @@ Nerolab Command Line Interface for Dart.
 
 ## Installing
 ```sh
-dart pub global activate nerolab_cli
+dart pub global activate flutter_nerolab_cli
 ```
 
 ## Commands
@@ -17,9 +17,14 @@ dart pub global activate nerolab_cli
 
 Create a nerolab Flutter project in seconds based on the **[Nerolab Core](https://github.com/Nerolab/nerolab_core)** template.
 
-(And for funzies - you can write $ nerolab magic to do the same thing!)
+Example:
+```sh
+nerolab create coba --project_id dev.nerolab.coba
+```
 
-### nerolab --help
+(And for funzies - you can write `$ nerolab magic` to do the same thing!)
+
+### `nerolab --help`
 See the complete list of commands and usage information.
 
 ```sh

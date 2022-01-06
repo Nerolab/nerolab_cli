@@ -33,11 +33,6 @@ class CreateCommand extends Command<int> {
         defaultsTo: null,
       )
       ..addOption(
-        'description',
-        help: 'The description for this new Flutter project.',
-        defaultsTo: null,
-      )
-      ..addOption(
         'package_id',
         help: 'The package or bundle ID for this new Flutter project.',
         defaultsTo: 'com.example.app',
@@ -65,9 +60,9 @@ class CreateCommand extends Command<int> {
 
   /// [ArgResults] which can be overridden for testing.
   @visibleForTesting
-  late ArgResults argResultOverrides;
+  ArgResults? argResultOverrides;
 
-  ArgResults? get _argResults => argResultOverrides;
+  ArgResults? get _argResults => argResultOverrides ?? argResults;
 
   @override
   Future<int> run() async {
@@ -142,8 +137,8 @@ class CreateCommand extends Command<int> {
   }
 
   Directory get _outputDirectory {
-    final rest = _argResults?.rest;
-    _validateOutputDirectoryArg(rest!);
+    final rest = _argResults!.rest;
+    _validateOutputDirectoryArg(rest);
     return Directory(rest.first);
   }
 
